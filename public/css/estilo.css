@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.header {
+    background-color: #EAC926;
+    display: flex;
+    width: 100%;
+}
+
+
+.header .conteiner-navar .navar{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.baner {
+    width: 100%;
+}
+.mercado-liebre {
+        width: 50%;
+}
+
+.conteiner-navar{
+    margin-left: 35px;
+    display: none;
+}
+.navar .item {
+    padding-right: 20px;
+}
+
+main{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ebebeb;
+}
+
+.main .maxi .artuculo1 {
+    border: 1px solid black;
+    padding: 10px;
+}
+.item-info{
+    margin-right: 10px;
+    box-sizing: border-box
+}
+
+.cajaDescripcion{
+    border-top: 1px solid  #ebebeb;
+    background-color: white;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+}
+
+ footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+ }
+
+ .titulares {
+    font-size: 24px;
+ }
+ .item-price{
+    font-size: 18px;
+ }
+ .item-discount {
+    font-size: 16px;
+ }
+
+ .item-description{
+    font-size: 16px;
+    display: none;
+ }
+
+/*tablet*/
+ @media (min-width:361px){
+    .item-description {
+        display: block ;
+    }
+    .item-info {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 50% /*jjjjjj*/
+    }
+   .conteiner-navar {
+    display:block;
+    }
+    .burger-menu{
+        display: none;
+    }
+ }
+/*escritorio*/
+ @media (min-width:769px){
+    .item-info {
+        width: 25%; /* En desktop, cada artículo ocupa el 25% del ancho */
+      }
+ }
+
+
+ .cajaDescripcion > .icono-camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+.cajaDescripcion {
+        position: relative;
+    }
+
+/*.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+}
+.item-logo{
+    width: 40%;
+    height: 50%;
+}
+*/
